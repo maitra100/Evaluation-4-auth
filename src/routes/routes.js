@@ -8,6 +8,6 @@ const route = express.Router();
 
 route.post('/user',validateUser, addUser);
 route.post('/login',validateUser, loginUser);
-route.post('/token/variable', tokenValidate,tokenVerify);
+route.post('/token/validate', tokenValidate,tokenVerify);
 
 module.exports = route;

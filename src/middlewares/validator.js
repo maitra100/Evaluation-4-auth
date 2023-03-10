@@ -1,4 +1,5 @@
 const joi=require('joi');
+const jwt=require('jsonwebtoken');
 
 const userSchema = joi.object({
   userEmail: joi.string().email().required(),
@@ -24,5 +25,8 @@ const tokenValidate = (req, res, next) => {
   }
   next();
 };
+
+
+
 
 module.exports={validateUser,tokenValidate};
