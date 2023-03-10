@@ -2,7 +2,7 @@ const redis = require('redis');
 
 const config = {
   socket: {
-    host: 'localhost',
+    host: 'redis',
     port: 6379,
   },
 };
